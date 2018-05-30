@@ -19,8 +19,8 @@ h1, h2 {text-align: left;}
 embed {padding: 5px;
 text-align:center;}
 #brita {font-weight:bold;
-border: double 8px white;
-width:400px;
+border: double 5px white;
+width:500px;
 padding: 5px;}
 #test {padding: 20px;
 }
@@ -59,15 +59,17 @@ $( function() {
   $('#journal').click(function(){
     $('#test').html("<iframe class=\"embedly-embed\" allowfullscreen frameborder=\"0\" width=\"70%\" height=\"375\" src= \"http://radiclejournal.org/index.php/rrar/about/editorialTeam\"> </iframe>");
         });
-  $("#nanny").click(function(){
-    $("#test").html("<iframe class=\"embedly-embed\" allowfullscreen frameborder=\"0\" width=\"70%\" height=\"375\" src= \"http://people.reed.edu/~bravery/homepage/nannying.html\"> </iframe>")
+  $("#prints").click(function(){
+    $("#test").html('<img src= \"images/prints2.jpg">')
+  });
+  $("#portrait").click(function(){
+    $("#test").html('<img src= \"images/portrait.jpg">')
   });
   $("#hammer").click(function(){
     $("#test").html('<img src= \"http://people.reed.edu/~bravery/homepage/welding1.jpg\">')
   });
   $("#rabbit").click(function(){
-    $("#test").html('<img src= \"http://people.reed.edu/~bravery/homepage/welding2.jpg\">',
-    '<img src= \"http://people.reed.edu/~bravery/homepage/welding3.jpg\">')
+    $("#test").html('<img src= \"images/galvanizing.jpg\">')
   });
   $("#labs").click(function(){
     $("#test").html('<iframe class=\"embedly-embed\" allowfullscreen frameborder=\"0\" width=\"70%\" height=\"375\" src=\"http://people.reed.edu/~bravery/\"> </iframe>')
@@ -89,8 +91,9 @@ $( function() {
 <div id="buttons">
 <button id="journal">Journal Editor (2016-17) </button>
 <br><br>
-<button id="nanny">Nanny (2014-17)</button>
+<button id="prints">Prints (2018)</button>
 <br><br>
+<button id="portrait"> Portrait (2018)</button>
 
 
 
